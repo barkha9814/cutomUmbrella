@@ -1,0 +1,145 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.loader{
+  width: 45vmin;
+  height: 10vmin;
+  pointer-events: none;
+}
+
+.loaderIcon{
+  width: 13px;
+}
+
+
+.images{
+  position: relative;
+}
+
+.logo{
+  position: absolute;
+  top: 74%;
+  left: 42%;
+  width: 50px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .loader, .loaderIcon {
+    animation: loader-spin infinite 2s linear;
+  }
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  gap: 6rem;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes loader-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.heading{
+  color: black;
+}
+
+.colorWrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+.infoWrapper{
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: black;
+}
+
+.info1, .info2{
+ margin: 0px;
+}
+
+.info1{
+  font-weight: 600;
+  font-size: 27px;
+}
+
+.info2{
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.info3{
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.colorBtnWrapper{
+  gap: 4rem;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+.blueBtn, .yellowBtn, .pinkBtn{
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+}
+
+.blueBtn{
+  background: #1eafe9;
+  border: none;
+}
+
+.yellowBtn{
+  background: #ebc525db;
+  border: none;
+}
+
+.pinkBtn{
+  background: #e10995;
+  border: none;
+}
+
+
+.UploadLogoBtn{
+  background: #00d2ff;
+  border: none;
+  height: 2rem;
+  color: white;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.UploadLogoBtn:hover{
+  background: #12d1fc;
+}
+
+.uploadIcon {
+  width: 13px;
+}
